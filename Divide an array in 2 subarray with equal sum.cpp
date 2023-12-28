@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
        int i,j,n;
-       cout<<"Enter the array size : ";
+       cout<<"Enter the array size : "; 
        cin>>n;
        int arr[n],sum1,sum2;
        for(i=0;i<n;i++)
