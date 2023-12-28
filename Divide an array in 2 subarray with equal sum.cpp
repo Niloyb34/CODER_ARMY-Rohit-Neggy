@@ -7,18 +7,18 @@ int main()
        cout<<"Enter the array size : "; 
        cin>>n;
        int arr[n],sum1,sum2;
-       for(i=0;i<n;i++)
+       for(i=0;i<n;i++)     // O(N)
        {
-              cin>>arr[i];
+              cin>>arr[i];   
        }
-       for(int i=0;i<n-1;i++)
+       for(int i=0;i<n-1;i++)  //O(N*(N+N))=O(N*2N)=O(N*N)=O(N2)
        {
               sum1=0,sum2=0;
-              for(j=0;j<=i;j++)
+              for(j=0;j<=i;j++)  //O(N)
               {
                   sum1+=arr[j];
               }
-              for(j=i+1;j<n;j++)
+              for(j=i+1;j<n;j++)   //O(N)
               {
                sum2+=arr[j];
               }
@@ -36,6 +36,7 @@ int main()
               }
        }
 }
+/* OVERALL TIME COMPLEXITY HBE O(N2)
 ///INPUT Array will be
 /*
     Array size-8
