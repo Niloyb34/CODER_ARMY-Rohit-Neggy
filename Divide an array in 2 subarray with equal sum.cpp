@@ -1,4 +1,4 @@
-///Divide an array in 2 subarray with equal sum
+///Divide an array in 2 subarray with equal sum  
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -15,10 +15,10 @@ int main()
        {
               sum1=0,sum2=0;
               for(j=0;j<=i;j++)  //O(N)
-              {
+              {                                                                                                                                              
                   sum1+=arr[j];
               }
-              for(j=i+1;j<n;j++)   //O(N)
+              for(j=i+1;j<n;j++)   //O(N)                                                                           TOTAL TIME COMPLEXITY HBE-O(N)+O(N2)======O(N2)
               {
                sum2+=arr[j];
               }
@@ -50,7 +50,7 @@ NO-->4 INDEX is 1
 NO-->-2 INDEX is 2
 NO-->5 INDEX is 3
 YES-->8 INDEX is 4  Tar mane amaderke 8 er porer element teke arekti array start korte hbe
-8er age prjnto array total sum = er porer element teke last prjnto element er sum equal hbe
+8 er age prjnto array total sum = er porer element teke last prjnto element er sum equal hbe
 NO-->20 INDEX is 5
 NO-->-10 INDEX is 6
 */
